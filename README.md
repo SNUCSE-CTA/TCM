@@ -35,7 +35,7 @@ Data graph file format is a text format to store a directed temporal data graph.
   - Following lines of "e source-ID destination-ID source-port destination-port edge-label sec msec" indicate the edges in the graph for Netflow.
   - Following lines of "e source-ID destination-ID edge-label sec" indicate the edges in the graph for Wikitalk and Superuser.
 
-Query graph file format is a text format to store a directed temporal query graph.
+Query graph file format is a text format to store a directed temporal query graph and constraints on timing order.
 - The first line of a graph should be "t # s ID".
 - Following lines of "v vertex-ID vertex-label" indicate the vertices in the graph.
 - Edges are represented as follows:
