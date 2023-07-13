@@ -3,28 +3,16 @@ Time-Constrained Continuous Subgraph Matching Using Temporal Information for Fil
 
 ## Usages
 ```bash
-./TCM_network <data_graph_file> <query_graph_file> <window_size> # for Netflow
-./TCM_snap <data_graph_file> <query_graph_file> <window_size> # for Wikitalk and Superuser
+./TCM <data_graph_file> <query_graph_file> <window_size>
 ```
 
 ## Experiments in the paper
-- Each script file in `scripts` directory reproduces the results of the experiments in the paper.
-  - netflow_varying_query_size.sh: Figure 7a, 7b
-  - wikitalk_varying_query_size.sh: Figure 7c, 7d
-  - superuser_varying_query_size.sh: Figure 7e, 7f
-  - netflow_varying_density.sh: Figure 8a, 8b
-  - wikitalk_varying_density.sh: Figure 8c, 8d
-  - superuser_varying_density.sh: Figure 8e, 8f
-  - netflow_varying_window_size.sh: Figure 9a, 9b
-  - wikitalk_varying_window_size.sh: Figure 9c, 9d
-  - superuser_varying_window_size.sh: Figure 9e, 9f
-- The results will be stored in `results/<exp_name>` directory.
+- Each script file in `scripts` directory reproduces the results of the experiments in the paper (Figures 6~8).
+- The results will be stored in `results/<dataset_name>` directory.
 
 ## Datasets
-Put graph files into `datasets` directory.
-- Netflow ([download](https://drive.google.com/file/d/1BI7qP4rim9towkY4zfudiVW64bD3oF78/view?usp=sharing))
-- Wikitalk ([download](https://drive.google.com/file/d/12Bwjn-LA6LUGYEWyBoD_JfcoBAqlsZpD/view?usp=sharing))
-- Superuser ([download](https://drive.google.com/file/d/1rElC7arQrTd1FCn6i0UvuH5I3JhE184o/view?usp=sharing))
+Put graph files into `datasets` directory and `querysets` directory.
+- [Download](https://drive.google.com/drive/folders/1JCfeZFjAQT8_2jwrFexCiOSJarVSI0GQ?usp=sharing)
 
 ## Input File Format
 Data graph file format is a text format to store a directed temporal data graph.
